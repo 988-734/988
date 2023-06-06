@@ -26,7 +26,9 @@
     var countdownDate = new Date("June 15, 2023 03:00:00").getTime();
 
     function redirect() {
-    document.location.href = 'http://116111.pl';
+    setTimeout(function() {
+      document.location.href = 'http://116111.pl';
+     }, 6000); // 6 seconds delay (in milliseconds)
     }
 
     // Update the countdown every 1 second
